@@ -1,0 +1,274 @@
+.cv-wrapper {
+    display: flex; /* Enables horizontal layout */
+    justify-content: space-between; /* Creates space between the CVs */
+    gap: 20px; /* Optional: Add spacing between the two CVs */
+    margin: 20px auto; /* Center the layout horizontally */
+    max-width: 2100px; /* Adjust the width to accommodate both CVs */
+}
+
+.container {
+    position: relative;
+    width: 50%; /* Adjust width to fit two CVs side by side */
+    max-width: 1000px;
+    background: #fff;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.2);
+}
+
+.container .left {
+    background: #167266; /* Green background */
+    padding: 0; /* Remove extra padding */
+    display: flex; /* Enable flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    height: 100%; /* Match the parent container's height */
+}
+
+.container {
+    height: 700px; /* Fixed height for each CV */
+    overflow: auto; /* Adds a scrollbar if content exceeds height */
+}
+
+
+/* Profile Text Section */
+.profileText {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers items horizontally */
+    justify-content: center; /* Centers items vertically */
+    width: 100%; /* Makes the profile text span the full width */
+    text-align: center; /* Centers the text */
+    color: #fff; /* Ensures text remains white */
+    padding:0;/* Optional: Adjust for spacing around text */
+    box-sizing: border-box; /* Includes padding in total width/height */
+}
+
+
+.profileImg {
+    width: 160px;
+    height: 160px;
+    border-radius: 70%; /* Makes the image circular */
+    overflow: hidden;
+    margin: 0;
+    margin-bottom: 20px; /* Adds space below the profile image */
+}
+
+.profileImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits the circular container */
+}
+
+.profileText h2 {
+    font-size: 1.8em; /* Adjust size for better visibility */
+    font-weight: bold; /* Makes the name prominent */
+    text-transform: uppercase; /* Ensures all text is uppercase */
+    color: #fff; /* Keeps the text white against a green background */
+    margin: 0; /* Removes unwanted margins */
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    text-align: center; /* Centers the text horizontally */
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #1a0202;
+
+}
+
+.title {
+    font-size: 1.5em; /* Adjust the font size */
+    font-weight: bold; /* Bold for emphasis */
+    color: #fff; /* White text color */
+    display: inline-block; /* Makes the border span only the width of the text */
+    border-left: 4px solid #0af6d7; /* Add a vertical border on the left */
+    padding-left: 10px; /* Create space between the border and the text */
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+
+
+.Info ul {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+}
+
+.Info ul li {
+    margin: 10px 0; /* Adds spacing between list items */
+    display: flex; /* Aligns icons and text horizontally */
+    align-items: center; /* Vertically aligns icons and text */
+}
+
+.icon {
+    font-size: 20px;
+    color: #0af6d7; /* Blue icon color */
+    margin-right: 5px; /* Adds space between icon and text */
+}
+
+.text {
+    color: #fff; /* Ensures text is white */
+    font-weight: 300; /* Lighter font-weight for elegance */
+}
+
+/* Education Section Styling */
+.education-list {
+    list-style: none; /* Removes default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.education-list li {
+    display: flex; /* Aligns year and details horizontally */
+    margin-bottom: 20px; /* Adds space between education entries */
+    gap:0; /* Adds space between year and details */
+}
+
+.education-list .year {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #167266; /* Green color for emphasis */
+    min-width: 120px; /* Ensures consistent width for all years */
+    text-align: center;/* the years to the right */
+}
+
+.education-list .details h4 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.education-list .details p {
+    margin: 5px 0;
+    color: #666; 
+    font-size: 0.95em;
+}
+
+  .Info .Languages .percent {
+     position: relative; 
+     width: 100%; 
+     height: 6px; 
+     background: #f0f0f0;
+      display:block; 
+      margin-top: 5px; 
+    }
+     .Info .Language .percent div { 
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        height: 100%;
+         background: #0af6d7;
+    }
+
+
+/* Right Section Styling */
+.container .right {
+    background: #fff; 
+    padding: 40px; 
+    text-align: left; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    gap: 30px; 
+}
+/* Profile Header Styling */
+.profileHeader {
+    position: absolute; 
+    top: 20px;
+    right: 20px; 
+    text-align: center; 
+}
+
+.profileHeader h2 {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    color: #333;
+    margin: 0; 
+}
+
+.profileHeader span {
+    font-size: 1em;
+    font-weight: 300; 
+    color: #167266; 
+    display: block; 
+    margin-top: 5px; 
+}
+
+.title2 {
+    font-size: 1.5em; 
+    font-weight: bold; 
+    color: #333; 
+    border-bottom: 2px solid #167266; 
+    padding-bottom: 10px; 
+    margin-bottom: 20px;
+    text-align: left; 
+}
+
+
+p {
+    text-indent: 20px; 
+    font-size: 0.9em;
+    line-height: 1.5em; 
+    color: #333; 
+}
+
+
+
+
+
+.title2 {
+    font-size: 1.5em;
+    font-weight: bold; 
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+/* Skills Box Container */
+.box {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-bottom: 15px; 
+}
+
+/* Skill Text (e.g., HTML, Video Editing) */
+.box h4 {
+    font-size: 1em; 
+    font-weight: normal; 
+    margin: 0; 
+    color: #444;
+}
+
+/* Progress Bar Container */
+.percent {
+    position: relative; 
+    width: 70%; 
+    height: 8px; 
+    background: #f0f0f0;
+    border-radius: 5px; 
+    overflow: hidden;
+}
+
+/* Filled Bar */
+.percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #167266; 
+    border-radius: 5px; 
+}
+
+
